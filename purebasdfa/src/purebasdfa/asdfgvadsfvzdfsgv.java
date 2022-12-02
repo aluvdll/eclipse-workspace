@@ -1,0 +1,5 @@
+package purebasdfa;
+
+class asdfgvadsfvzdfsgv {
+
+}
