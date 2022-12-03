@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-
+//comentario para prueba git
 public class testCajero {
 	
 	public static void main(String[] args) {
