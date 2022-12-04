@@ -1,0 +1,38 @@
+import javax.swing.JOptionPane;
+
+public class testCajero {
+	
+	public static void main(String[] args) {
+		String saldo = "1";
+		String Imposicion = "2";
+		String reintegro = "3";
+		String salir = "4";
+
+		String opcionSelecionada = JOptionPane.showInputDialog(null, "Pulse 1, para consultar el saldo.\nPulse 2, para realizar un ingreso.\nPulse 3, para realizar un reintegro.\nPulse 4, Para salir.","Bienvenido - Selecione una operacion", -1));
+
+
+		while(opcionSelecionada != salir) {
+		
+			System.out.println(opcionSelecionada);
+			if (opcionSelecionada == saldo) {
+			System.out.println("opcion 1");
+			opcionSelecionada = JOptionPane.showInputDialog(null, "Pulse 1, para consultar el saldo.\nPulse 2, para realizar un ingreso.\nPulse 3, para realizar un reintegro.\nPulse 4, Para salir.","Bienvenido - Selecione una operacion", -1);
+
+			}
+			else if (opcionSelecionada == Imposicion) {
+				System.out.println("opcion 2");
+				opcionSelecionada = JOptionPane.showInputDialog(null, "Pulse 1, para consultar el saldo.\nPulse 2, para realizar un ingreso.\nPulse 3, para realizar un reintegro.\nPulse 4, Para salir.","Bienvenido - Selecione una operacion", -1);
+
+			}
+			else if (opcionSelecionada == reintegro) {
+				System.out.println("opcion 3");
+				opcionSelecionada = JOptionPane.showInputDialog(null, "Pulse 1, para consultar el saldo.\nPulse 2, para realizar un ingreso.\nPulse 3, para realizar un reintegro.\nPulse 4, Para salir.","Bienvenido - Selecione una operacion", -1);
+
+			}
+			else {
+			System.out.println("ha introducido un valor no correcto");
+			opcionSelecionada = JOptionPane.showInputDialog(null, "Pulse 1, para consultar el saldo.\nPulse 2, para realizar un ingreso.\nPulse 3, para realizar un reintegro.\nPulse 4, Para salir.","Bienvenido - Selecione una operacion", -1);
+			}
+		}
+	}
+}

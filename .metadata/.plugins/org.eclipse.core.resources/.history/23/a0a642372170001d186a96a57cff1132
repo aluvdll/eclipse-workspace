@@ -1,0 +1,36 @@
+import javax.swing.JOptionPane;
+
+public class testCajero {
+	
+	public static int opcionSelecionada() {
+		int seleccionUsuario;
+		int opcionSelecionada = Integer.parseInt(JOptionPane.showInputDialog(null, "Pulse 1, para consultar el saldo.\n Pulse 2, para realizar un ingreso.\nPulse 3, para realizar un reintegro.\nPulse 4, Para salir.","Bienvenido - Selecione una operacion", -1));
+		return seleccionUsuario = opcionSelecionada;
+	}
+	
+	public static void main(String[] args) {
+		int saldo = 1;
+		int Imposicion = 2;
+		int reintegro = 3;
+		int salir = 4;
+		int opcionSelecionada = 0;
+		int seleccionUsuario = 0;
+
+		opcionSelecionada();
+		
+
+		while(seleccionUsuario != 4) {
+			
+			if (opcionSelecionada == 1) {
+			
+			}
+			else if (opcionSelecionada == 2) {
+				
+			}
+			else if (opcionSelecionada == 3) {
+				
+			}
+			opcionSelecionada();
+		}
+	}
+}

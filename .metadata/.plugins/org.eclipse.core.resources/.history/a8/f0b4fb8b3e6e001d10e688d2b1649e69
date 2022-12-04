@@ -1,0 +1,9 @@
+
+class afilaTuLapiz {	
+	int height;
+	int width; 
+	
+	static void calcArea(int height, int width) {
+		return height * width;
+	}
+}

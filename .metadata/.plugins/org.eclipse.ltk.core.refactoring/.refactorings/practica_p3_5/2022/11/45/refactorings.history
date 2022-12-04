@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copiar elemento «Triangle.java» a «HeaqQuiz.java»&#x0D;&#x0A;- Proyecto original: «practica_p3_5»&#x0D;&#x0A;- Elemento destino: «HeaqQuiz.java»&#x0D;&#x0A;- Elemento original: «practica_p3_5.Triangle.java»" description="Copiar unidad de compilacion" destination="=Practica_p3_6/src&lt;{HeaqQuiz.java" element1="/src&lt;practica_p3_5{Triangle.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1668333427813" units="1" version="1.0"/>
+</session>
