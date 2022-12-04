@@ -16,6 +16,7 @@ public class testCajero {
 
 			if (opcionSelecionada == saldo) {
 			System.out.println("opcion 1");
+			solicitaCantidad();
 			}
 			else if (opcionSelecionada == Imposicion) {
 				System.out.println("opcion 2");
@@ -25,9 +26,7 @@ public class testCajero {
 				System.out.println("opcion 3");
 
 			}
-			/*else if (opcionSelecionada == salir ) {
-				
-			}*/
+
 			else {
 				JOptionPane.showMessageDialog(null, "ha introducido un valor no correcto", "Error", 0);
 			}
@@ -37,4 +36,10 @@ public class testCajero {
 	
 		}
 	}
+	static void solicitaCantidad() {
+		System.out.println("funcion solicitaCantidad()");
+		
+	}
 }
+
+

@@ -1,9 +1,0 @@
-
-public class afilaTuLapiz {	
-	int height;
-	int width; 
-	
-	int calcArea(int height, int width) {
-		return height * width;
-	}
-}
