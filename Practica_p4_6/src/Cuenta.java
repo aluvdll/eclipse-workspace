@@ -1,12 +1,20 @@
 
-public class Cuenta {
+class Cuenta {
 	private double saldo;
 	
-	public void setSaldo(double ingreso){
-		this.saldo=saldo+ingreso;
+	public Cuenta() {
+		saldo = 0;
 	}
 	
 	public double getSaldo(){
 		return saldo;
+	} 
+	
+	public void setSaldo(double importe){
+		saldo=importe;
 	}
+
+
+	
+
 }
