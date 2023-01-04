@@ -55,15 +55,14 @@ public class AplicacionCajero {
 		while(condicion) {
 			
 			opcionCuenta = Integer.parseInt(JOptionPane.showInputDialog(null, "Selecciona cuenta:\n 1-Personal. \n 2-Cuenta de ahorro. \n3-Cuenta compartida. \n4-Salir"));
-		
+			System.out.println("esta es el nº de array seleccionado" +  (opcionCuenta-1));
 			opcion= JOptionPane.showInputDialog("1. Ingresar \n2. Retirar\n3. Consultar Saldo\n4. Salir");
 			
 			try {
 				switch (opcion) {
 					case "1": {
 						valor = Cajero.obtenerCantidad();
-						System.out.println(valor);
-						System.out.println(opcionCuenta-1);
+						System.out.println(opcionCuenta-1+","+valor);
 						cajeroInstituto.ingresar(opcionCuenta-1, valor);// se puede poner directamente dentro del parentesis el metodo cajeroInstituto.obtenerCantidad()
 						cajeroInstituto.mostrarSaldo(opcionCuenta-1);
 						break;
@@ -75,7 +74,7 @@ public class AplicacionCajero {
 						break;
 					}
 					case "3": {
-						cajeroInstituto.mostrarSaldo(opcionCuenta);
+						cajeroInstituto.mostrarSaldo(opcionCuenta-1);
 						break;
 					}
 					case "4": {
