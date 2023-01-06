@@ -3,6 +3,7 @@ import javax.swing.JOptionPane;
 public class Maquina {
 	private int referencia;
 	private double saldo;
+	int cajones=2;
 	int[] stockCajon = new int[2];
 	private int boton;
 	private int administrador = 2;//NO SE UTILIZA DE MOMENTO.
@@ -11,7 +12,9 @@ public class Maquina {
 	private int totalIntentosAcceso=4;
 	private int intentoDeAccesos=0;
 	
-	Refrescos [] refresco = new Refrescos[1];
+	
+	
+	CajonMaquina cj[] = new CajonMaquina[cajones];
 	
 	
 	public void setRefMaquina(int nRef) {
@@ -30,10 +33,6 @@ public class Maquina {
 		return saldo;
 	}
 	
-
-	public void setReponer(int reposicionStock, int cajon){
-		stockCajon[cajon]+=reposicionStock;
-	}
 	
 	public int getConsultaStock(int cajon) {
 		return stockCajon[cajon];
