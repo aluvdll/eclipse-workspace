@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 
 public class CajonMaquina {
 	private String nombreCajon;
@@ -16,10 +17,11 @@ public class CajonMaquina {
 		return stockCajon;
 	}
 
-	public void setStockCajon(int stockCajon, String NombreRefrescoReponer, int numRefresco) {
+	public void setStockCajon(int stockCajon, int numRefresco) {
+		stockCajon = Integer.parseInt(JOptionPane.showInputDialog("Que cantidad de refresco quiere introducir"));
 		this.stockCajon = stockCajon;
+		stockCajon = Integer.parseInt(JOptionPane.showInputDialog("Que Refresco (num) de refresco quiere introducir"));
 		refresco[numRefresco]=new Refrescos();
-		refresco[numRefresco].setInsertaNombreProducto(NombreRefrescoReponer);
 	}
 	
 	

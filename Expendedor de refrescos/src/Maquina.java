@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 public class Maquina {
 	private int referencia;
 	private double saldo;
-	int cajones=2;
+	int cajones=10;
 	int[] stockCajon = new int[2];
 	private int boton;
 	private int administrador = 2;//NO SE UTILIZA DE MOMENTO.
@@ -68,6 +68,18 @@ public class Maquina {
 				if(constraseñaIntroducida==contraseña) {
 					System.out.println("está en el menu de administrador");
 					intentoDeAccesos=totalIntentosAcceso;
+					
+					int opcionAdmin = Integer.parseInt(JOptionPane.showInputDialog(null, 
+							"Pulsa 1 - Introducir stock ", "Menu Administrador", 0));
+					switch (opcionAdmin) {
+					case 1:
+						int cajonRegStock = Integer.parseInt(JOptionPane.showInputDialog("Que cajón quiere rellenar"));
+						int cajonSELEC = 0, refrSELEC = 0;
+						
+						cj[cajonRegStock].setStockCajon(cajonSELEC, refrSELEC);;
+						break;
+					}
+					
 				}else {
 					++intentoDeAccesos;
 					if(intentoDeAccesos==totalIntentosAcceso) {
