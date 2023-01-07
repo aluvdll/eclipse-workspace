@@ -2,8 +2,6 @@ import javax.swing.JOptionPane;
 
 public class testMaquinas {
 
-	
-
 	public static void main(String[] args) {
 		
 		Maquina [] expendedor = new Maquina[3];
@@ -11,13 +9,8 @@ public class testMaquinas {
 		expendedor[0].cj[0]=new CajonMaquina();
 		expendedor[0].cj[0].setNombreCajon("A1");
 		expendedor[0].cj[0].setStockCajon(10, "COLA",0);
-//		public void setStockCajon(int stockCajon, String NombreRefrescoReponer)
-		
 		
 		System.out.println(expendedor[0].cj[0].getStockCajon()+" "+expendedor[0].cj[0].getNombreCajon()+" "+expendedor[0].cj[0].refresco[0].getNombreRefresco());
-
-		
-		
 
 		expendedor[1]= new Maquina();
 		expendedor[1].setRefMaquina(1002);

@@ -12,10 +12,7 @@ public class Maquina {
 	private int totalIntentosAcceso=4;
 	private int intentoDeAccesos=0;
 	
-	
-	
 	CajonMaquina cj[] = new CajonMaquina[cajones];
-	
 	
 	public void setRefMaquina(int nRef) {
 		referencia = nRef;
