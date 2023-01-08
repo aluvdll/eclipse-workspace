@@ -1,4 +1,3 @@
-
 public class Refrescos {
 	private String nombre;
 	private double precio;	
@@ -10,5 +9,4 @@ public class Refrescos {
 	public String getNombreRefresco() {
 		return nombre;
 	}
-	
 }

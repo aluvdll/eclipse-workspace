@@ -71,18 +71,24 @@ public class Maquina {
 					
 					int opcionAdmin = Integer.parseInt(JOptionPane.showInputDialog(null, 
 							"Pulsa 1 - Introducir stock "
-							+ "\nPulsa 2 - Cambiar contraseña del expendedor ", 
+							+ "\nPulsa 2 - Cambiar contraseña del expendedor "
+							+ "\nPulsa 3 - Para modificar los intentos de acceso al menú administrador",
 						    "Menu Administrador", 0));
-					switch (opcionAdmin) {
+				switch (opcionAdmin) {
 					case 1:
 						int cajonRegStock = Integer.parseInt(JOptionPane.showInputDialog("Que cajón quiere rellenar ud"));
-//						int cajonSELEC = 0, refrSELEC = 1;
-						
 						cj[cajonRegStock].setStockCajon();
 						break;
+						
 					case 2:
 						setContraseña();
-					}
+						break;
+					
+					case 3:
+						setTotalIntentosAcceso();
+						intentoDeAccesos=totalIntentosAcceso;
+						break;	
+				}
 					
 				}else {
 					++intentoDeAccesos;
