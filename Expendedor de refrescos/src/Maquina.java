@@ -14,7 +14,6 @@ public class Maquina {
 	
 	CajonMaquina cj[] = new CajonMaquina[cajones];
 	
-	
 	public void setRefMaquina(int nRef) {
 		referencia = nRef;
 	}

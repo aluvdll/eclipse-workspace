@@ -23,6 +23,4 @@ public class CajonMaquina {
 		int numRefresco = Integer.parseInt(JOptionPane.showInputDialog("Que Refresco (num) de refresco quiere introducir"));
 		refresco[numRefresco]=new Refrescos();
 	}
-	
-	
 }
