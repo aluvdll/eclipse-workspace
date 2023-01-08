@@ -30,13 +30,17 @@ public class testMaquinas {
 		
 
 		while(inicioSesion) {
+			try {
 			int expElegido=Integer.parseInt(JOptionPane.showInputDialog("por favor elige el expendedor a utilizar.\nActualmente hay "+expendedor.length+" máquinas."));
 			expElegido-=1;
-
 			
 			expendedor[expElegido].accesoAExpendedor();
 			System.out.println("este es el stock existente" + expendedor[0].cj[0].getStockCajon()+" Este es el nombre del cajón "+expendedor[0].cj[0].getNombreCajon());
 			System.out.println("este es el stock existente" + expendedor[0].cj[1].getStockCajon()+" Este es el nombre del cajón "+expendedor[0].cj[1].getNombreCajon());
+		
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null, "Por favor introduzca un expendedor real","Error",0);
+			}
 		}
 	}
 }
