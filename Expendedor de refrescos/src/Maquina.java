@@ -14,6 +14,7 @@ public class Maquina {
 	
 	CajonMaquina cj[] = new CajonMaquina[cajones];
 	
+	
 	public void setRefMaquina(int nRef) {
 		referencia = nRef;
 	}
@@ -73,10 +74,10 @@ public class Maquina {
 							"Pulsa 1 - Introducir stock ", "Menu Administrador", 0));
 					switch (opcionAdmin) {
 					case 1:
-						int cajonRegStock = Integer.parseInt(JOptionPane.showInputDialog("Que cajón quiere rellenar"));
-						int cajonSELEC = 0, refrSELEC = 0;
+						int cajonRegStock = Integer.parseInt(JOptionPane.showInputDialog("Que cajón quiere rellenar ud"));
+//						int cajonSELEC = 0, refrSELEC = 1;
 						
-						cj[cajonRegStock].setStockCajon(cajonSELEC, refrSELEC);;
+						cj[cajonRegStock].setStockCajon();
 						break;
 					}
 					
@@ -90,8 +91,10 @@ public class Maquina {
 					else {
 						JOptionPane.showMessageDialog(null, "CONTRASEÑA INCORRECTA\nRecuerde que solo dispone de " + (totalIntentosAcceso-intentoDeAccesos) + " intentos más.", "ERROR",0);						
 					}
+					
 				}
 			}
+			intentoDeAccesos=0;
 		}
 	}
 }

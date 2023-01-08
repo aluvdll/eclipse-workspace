@@ -17,10 +17,10 @@ public class CajonMaquina {
 		return stockCajon;
 	}
 
-	public void setStockCajon(int stockCajon, int numRefresco) {
-		stockCajon = Integer.parseInt(JOptionPane.showInputDialog("Que cantidad de refresco quiere introducir"));
-		this.stockCajon = stockCajon;
-		stockCajon = Integer.parseInt(JOptionPane.showInputDialog("Que Refresco (num) de refresco quiere introducir"));
+	public void setStockCajon() {
+		int stockCajon = Integer.parseInt(JOptionPane.showInputDialog("Que cantidad de refresco quiere introducir"));
+		this.stockCajon = this.stockCajon+stockCajon;
+		int numRefresco = Integer.parseInt(JOptionPane.showInputDialog("Que Refresco (num) de refresco quiere introducir"));
 		refresco[numRefresco]=new Refrescos();
 	}
 	
