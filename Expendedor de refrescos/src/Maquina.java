@@ -32,6 +32,7 @@ public class Maquina {
 	
 	
 	public int getConsultaStock(int cajon) {
+		System.out.println("el stock existente en la máquina soliitada es de"+ stockCajon[cajon]);
 		return stockCajon[cajon];
 	}
 
@@ -72,7 +73,8 @@ public class Maquina {
 					int opcionAdmin = Integer.parseInt(JOptionPane.showInputDialog(null, 
 							"Pulsa 1 - Introducir stock "
 							+ "\nPulsa 2 - Cambiar contraseña del expendedor "
-							+ "\nPulsa 3 - Para modificar los intentos de acceso al menú administrador",
+							+ "\nPulsa 3 - Para modificar los intentos de acceso al menú administrador "
+							+ "\nPulsa 4 - Para consultar el stock del cajón.",
 						    "Menu Administrador", 0));
 				switch (opcionAdmin) {
 					case 1:
@@ -88,6 +90,10 @@ public class Maquina {
 						setTotalIntentosAcceso();
 						intentoDeAccesos=totalIntentosAcceso;
 						break;	
+						
+					case 4:
+						cajonRegStock = Integer.parseInt(JOptionPane.showInputDialog("Que cajón quiere consultar"));
+						JOptionPane.showMessageDialog(null, "El cajón consultado tiene un total de "+cj[cajonRegStock].getStockCajon()+" latas.");
 				}
 					
 				}else {
